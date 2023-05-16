@@ -17,9 +17,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build",
-    "homepage": "."
+    "deploy": "npm run build && gh-pages -d build"
   },
+  "homepage": "https://toma-p.github.io/mesto-react/",
   "eslintConfig": {
     "extends": [
       "react-app",
