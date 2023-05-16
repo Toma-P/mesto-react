@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b78cc1d.css",
-    "main.js": "/static/js/main.8f1384da.js",
-    "static/js/787.5530211c.chunk.js": "/static/js/787.5530211c.chunk.js",
-    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
-    "static/media/Inter-Black.woff": "/static/media/Inter-Black.c6938660eec019fefd68.woff",
-    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.8c206db99195777c6769.woff",
-    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
-    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
-    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
-    "static/media/header-logo-white.svg": "/static/media/header-logo-white.bc3450ffaa676172ae9a1ed3be59d4df.svg",
-    "static/media/like-button.svg": "/static/media/like-button.0e390048c288271ab07f.svg",
-    "index.html": "/index.html",
-    "static/media/delete-button.svg": "/static/media/delete-button.823b0cf1b0b7e9cb7cad.svg",
-    "static/media/like-button-active.svg": "/static/media/like-button-active.35948469632d0421d697.svg",
-    "static/media/profile-button-edit.svg": "/static/media/profile-button-edit.6c7bf05444b9793fdf6e.svg",
-    "static/media/editAvatar.svg": "/static/media/editAvatar.a086f758840ae814ecde.svg",
-    "static/media/popup-close-button.svg": "/static/media/popup-close-button.039f1f5203f653b4bacd.svg",
-    "static/media/profile-button-add.svg": "/static/media/profile-button-add.bed8c136e13907f5eefb.svg",
-    "main.6b78cc1d.css.map": "/static/css/main.6b78cc1d.css.map",
-    "main.8f1384da.js.map": "/static/js/main.8f1384da.js.map",
-    "787.5530211c.chunk.js.map": "/static/js/787.5530211c.chunk.js.map"
+    "main.css": "/mesto-react/static/css/main.40813415.css",
+    "main.js": "/mesto-react/static/js/main.3c0ecdcd.js",
+    "static/js/787.5530211c.chunk.js": "/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.woff": "/mesto-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/mesto-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/mesto-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/mesto-react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/mesto-react/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/mesto-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/header-logo-white.svg": "/mesto-react/static/media/header-logo-white.bc3450ffaa676172ae9a1ed3be59d4df.svg",
+    "static/media/like-button.svg": "/mesto-react/static/media/like-button.0e390048c288271ab07f.svg",
+    "index.html": "/mesto-react/index.html",
+    "static/media/delete-button.svg": "/mesto-react/static/media/delete-button.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like-button-active.svg": "/mesto-react/static/media/like-button-active.35948469632d0421d697.svg",
+    "static/media/profile-button-edit.svg": "/mesto-react/static/media/profile-button-edit.6c7bf05444b9793fdf6e.svg",
+    "static/media/editAvatar.svg": "/mesto-react/static/media/editAvatar.a086f758840ae814ecde.svg",
+    "static/media/popup-close-button.svg": "/mesto-react/static/media/popup-close-button.039f1f5203f653b4bacd.svg",
+    "static/media/profile-button-add.svg": "/mesto-react/static/media/profile-button-add.bed8c136e13907f5eefb.svg",
+    "main.40813415.css.map": "/mesto-react/static/css/main.40813415.css.map",
+    "main.3c0ecdcd.js.map": "/mesto-react/static/js/main.3c0ecdcd.js.map",
+    "787.5530211c.chunk.js.map": "/mesto-react/static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b78cc1d.css",
-    "static/js/main.8f1384da.js"
+    "static/css/main.40813415.css",
+    "static/js/main.3c0ecdcd.js"
   ]
 }
