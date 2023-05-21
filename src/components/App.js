@@ -28,39 +28,70 @@ function App() {
   };
 
   return (
-    <body className="page">
+    <div className="page">
       <Header />
-      <Main onCardClick={setSelectedCard} onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} />
+      <Main 
+        onCardClick={setSelectedCard} 
+        onEditProfile={handleEditProfileClick} 
+        onAddPlace={handleAddPlaceClick} 
+        onEditAvatar={handleEditAvatarClick} 
+      />
       <Footer />
-      <PopupWithForm onClose={closeAllPopups} isOpen={isEditProfilePopupOpen} name="edit-profile" title="Редактировать профиль" buttonText="Сохранить">
+      <PopupWithForm 
+        onClose={closeAllPopups} 
+        isOpen={isEditProfilePopupOpen} 
+        name="edit-profile" 
+        title="Редактировать профиль" 
+        buttonText="Сохранить"
+      >
         <label className="popup__form-field">
-          <input type="text" className="popup__form-item popup__form-item_type_username" name="name" minlength="2" maxlength="40" value="" placeholder="Имя пользователя" required />
+          <input type="text" className="popup__form-item popup__form-item_type_username" name="name" minLength="2" maxLength="40" defaultValue="" placeholder="Имя пользователя" required />
             <span className="popup__form-error"></span>
           </label>
           <label className="popup__form-field">
-            <input type="text" className="popup__form-item popup__form-item_type_about" name="about" minlength="2" maxlength="200" value="" placeholder="Немного о себе" required />
+            <input type="text" className="popup__form-item popup__form-item_type_about" name="about" minLength="2" maxLength="200" defaultValue="" placeholder="Немного о себе" required />
             <span className="popup__form-error"></span>
           </label>
       </PopupWithForm>
-      <PopupWithForm onClose={closeAllPopups} isOpen={isAddPlacePopupOpen} name="add-card" title="Новое место" buttonText="Создать">
+      <PopupWithForm 
+        onClose={closeAllPopups} 
+        isOpen={isAddPlacePopupOpen} 
+        name="add-card" 
+        title="Новое место" 
+        buttonText="Создать"
+      >
         <label className="popup__form-field">
-          <input type="text" className="popup__form-item popup__form-item_type_name" name="name" minlength="2" maxlength="30" value="" placeholder="Название" required />
+          <input type="text" className="popup__form-item popup__form-item_type_name" name="name" minLength="2" maxLength="30" defaultValue="" placeholder="Название" required />
             <span className="popup__form-error"></span>
           </label>
           <label className="popup__form-field">
-            <input type="url" className="popup__form-item popup__form-item_type_link" name="link" value="" placeholder="Ссылка на картинку" required />
+            <input type="url" className="popup__form-item popup__form-item_type_link" name="link" defaultValue="" placeholder="Ссылка на картинку" required />
             <span className="popup__form-error"></span>
           </label>
       </PopupWithForm>
-      <PopupWithForm onClose={closeAllPopups} isOpen={isEditAvatarPopupOpen} name="edit-avatar" title="Обновить аватар" buttonText="Сохранить">
+      <PopupWithForm 
+        onClose={closeAllPopups} 
+        isOpen={isEditAvatarPopupOpen} 
+        name="edit-avatar" 
+        title="Обновить аватар" 
+        buttonText="Сохранить"
+      >
         <label className="popup__form-field">
-          <input type="url" className="popup__form-item popup__form-item_type_link" name="link" value="" placeholder="Ссылка на картинку" required />
+          <input type="url" className="popup__form-item popup__form-item_type_link" name="link" defaultValue="" placeholder="Ссылка на картинку" required />
           <span className="popup__form-error"></span>
         </label>
       </PopupWithForm>
-      <PopupWithForm onClose={closeAllPopups} name="delete" title="Вы уверены?" buttonText="Да" />
-      <ImagePopup card={selectedCard} onClose={closeAllPopups} />
-    </body>
+      <PopupWithForm 
+        onClose={closeAllPopups} 
+        name="delete" 
+        title="Вы уверены?" 
+        buttonText="Да" 
+      />
+      <ImagePopup 
+        card={selectedCard} 
+        onClose={closeAllPopups} 
+      />
+    </div>
   );
 }
 

@@ -21,3 +21,4 @@
 :pushpin: Использование классов JS и подключение модулей
 
 Создано в рамках обучения в [Яндекс.Практикум](https://practicum.yandex.ru/).
+Ссылка на проект: https://toma-p.github.io/mesto-react/index.html

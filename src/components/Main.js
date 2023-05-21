@@ -2,7 +2,7 @@ import React from 'react';
 import { api } from '../utils/Api.js';
 import Card from './Card.js';
 
-function Main(props) {
+function Main({onCardClick, onEditProfile, onAddPlace, onEditAvatar}) {
   const [userName, setUserName] = React.useState('');
   const [userDescription, setUserDescription] = React.useState('');
   const [userAvatar, setUserAvatar] = React.useState('');
@@ -32,14 +32,14 @@ function Main(props) {
       <section className="profile">
         <div className="profile__avatar">
           <img className="profile__avatar-img" src={userAvatar} alt="Жак-Ив Кусто"/>
-          <button type="button" onClick={props.onEditAvatar} area-label="Изменить аватар" className="profile__avatar-button"></button>
+          <button type="button" onClick={onEditAvatar} area-label="Изменить аватар" className="profile__avatar-button"></button>
         </div>
         <div className="profile__info">
           <h1 className="profile__info-title">{userName}</h1>
-          <button type="button" onClick={props.onEditProfile} aria-label="Редактировать данные" className="profile__info-button"></button>
+          <button type="button" onClick={onEditProfile} aria-label="Редактировать данные" className="profile__info-button"></button>
           <p className="profile__info-subtitle">{userDescription}</p>
         </div>
-        <button type="button" onClick={props.onAddPlace} aria-label="Добавить новую фотографию" className="profile__add-button"></button>
+        <button type="button" onClick={onAddPlace} aria-label="Добавить новую фотографию" className="profile__add-button"></button>
       </section>
       <section className="cards">
         <ul className="cards__grid">
@@ -47,8 +47,7 @@ function Main(props) {
             return <Card 
               key={card._id} 
               card={card}
-              
-              onCardClick={props.onCardClick}
+              onCardClick={onCardClick}
             />
           })}
         </ul>
