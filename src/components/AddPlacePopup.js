@@ -1,13 +1,10 @@
-import React from "react";
-//import { CurrentUserContext } from "../contexts/CurrentUserContext";
+import React, {useState} from "react";
 import PopupWithForm from "./PopupWithForm";
 
-function AddPlacePopup({isOpen, onClose, onAddPlace}) {
+function AddPlacePopup({isOpen, onClose, onAddPlace, isLoading}) {
 
- 
- // const currentUser = React.useContext(CurrentUserContext);
-  const [name, setName] = React.useState('');
-  const [link, setLink] = React.useState('');
+  const [name, setName] = useState('');
+  const [link, setLink] = useState('');
 
   function handleNameChange(e) {
     setName(e.target.value);
@@ -38,17 +35,36 @@ function AddPlacePopup({isOpen, onClose, onAddPlace}) {
       title="Новое место" 
       buttonText="Создать"
       onSubmit={handleSubmit}
+      isLoading={isLoading}
     >
       <label className="popup__form-field">
-        <input type="text" className="popup__form-item popup__form-item_type_name" name="name" minLength="2" maxLength="30"value={name} onChange={handleNameChange} placeholder="Название" required />
+        <input 
+          type="text" 
+          className="popup__form-item popup__form-item_type_name" 
+          name="name" 
+          minLength="2" 
+          maxLength="30" 
+          value={name} 
+          onChange={handleNameChange} 
+          placeholder="Название" 
+          required 
+        />
         <span className="popup__form-error"></span>
       </label>
       <label className="popup__form-field">
-        <input type="url" className="popup__form-item popup__form-item_type_link" name="link" value={link} onChange={handleLinkChange} placeholder="Ссылка на картинку" required />
+        <input 
+          type="url" 
+          className="popup__form-item popup__form-item_type_link" 
+          name="link" 
+          value={link} 
+          onChange={handleLinkChange} 
+          placeholder="Ссылка на картинку" 
+          required 
+        />
         <span className="popup__form-error"></span>
       </label>
     </PopupWithForm>
   )
 }
   
-  export default AddPlacePopup;
+export default AddPlacePopup;

@@ -1,15 +1,8 @@
 import React from "react";
 
-function PopupWithForm({isOpen, onClose, name, title, buttonText, onSubmit, children}) {
-  
-  const [text, setText] = React.useState(buttonText); 
-
-  React.useEffect(() => {
-    setText(buttonText);
-  }, [isOpen]);
-
+function PopupWithForm({isOpen, onClose, name, title, buttonText, onSubmit, isLoading, children}) {
+ 
   function handleSubmitClick(e) {
-    setText('Сохранение...');
     onSubmit(e);
   }
   
@@ -20,7 +13,7 @@ function PopupWithForm({isOpen, onClose, name, title, buttonText, onSubmit, chil
         <h2 className="popup__title">{title}</h2>
         <form className="popup__form" name={name} onSubmit={handleSubmitClick} noValidate>
           {children}
-          <button type="submit" className="popup__form-submit">{text}</button>
+          <button type="submit" className="popup__form-submit">{isLoading ? 'Сохранение...' : buttonText}</button>
         </form>
       </div>
     </section>
